@@ -21,7 +21,6 @@ if (isset($_POST['submit'])){
     echo "1. Combining the first, last, and middle name to display as: [first name] [middle initial]. [last name] <br/>$first $middle[0]. $last<br/><br/>";
     $arr_ph = explode("-",$split);
 
-    //foreach loop to display the returned array
     echo"2. Spliting the following string on each dash - character<br/>";
     foreach($arr_ph as $i){
         echo "$i ";
