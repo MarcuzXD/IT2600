@@ -38,8 +38,7 @@ $book2 = new Book($_POST['book2title'], $_POST['book2author'], $_POST['book2pric
 $book2->display();
 
 
-// 6. 
-// Calculate cost for both books before tax, tax amount for both books, cost of books after tax by accessing the values on book1 and book2 objects
+// 6. Calculate cost for both books before tax, tax amount for both books, cost of books after tax by accessing the values on book1 and book2 objects
 $total_cost_before_tax = $book1->price + $book2->price;
 $tax = get_tax($total_cost_before_tax);
 $cost_with_tax = $total_cost_before_tax + $tax;
